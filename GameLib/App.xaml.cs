@@ -30,7 +30,8 @@ namespace GameLib
             #endif
             });
 
-            MainPage = new StartPage();
+            MainPage = new GameLibDetailsPage(
+Services.GameLibService.GetAllGames().First(p => p.Name == "Hogwarts Legacy"));
         }
     }
 }
