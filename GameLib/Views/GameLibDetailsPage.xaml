@@ -3,10 +3,127 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Views.GameLibDetailsPage"
              Title="GameLibDetailsPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="Black" Offset="0.0" />
+            <GradientStop Color="#180161" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <Grid
+        Margin="24,52,24,0"
+        ColumnDefinitions="*,*"
+        RowDefinitions="Auto,*">
+
+        <ImageButton
+            WidthRequest="24"
+            HeightRequest="24"
+            Source="imgback.png"
+            Grid.Row="0"
+            Grid.Column="0"
+            HorizontalOptions="Start"
+            VerticalOptions="Center"
+            Clicked="BackButton_Clicked" />
+
+        <ImageButton
+            WidthRequest="24"
+            HeightRequest="24"
+            Source="imgmenu.png"
+            Grid.Row="0"
+            Grid.Column="1"
+            HorizontalOptions="End"
+            VerticalOptions="Center" />
+
+
+        <ScrollView
+            Grid.Row="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            HorizontalScrollBarVisibility="Never"
+            VerticalScrollBarVisibility="Never"
+            Margin="0,16,0,0">
+
+            <VerticalStackLayout
+                Spacing="18">
+
+
+                <Image 
+                    Source="{Binding HeroImage}"
+                    Aspect="AspectFit"
+                    HorizontalOptions="Fill"
+                    HeightRequest="240"
+                    Margin="24,0"/>
+
+                <Label 
+                    Margin="0,-24,0,0"
+                    Style="{StaticResource AllGameHeaderSubtitleStyle}"
+                    Text="{Binding Name}"/>
+
+                <Label
+                    Margin="0,-12,0,0"
+                    Style="{StaticResource AllGameHeaderSubtitleStyle}"
+                    Text="{Binding Subtitle}"/>
+
+                <Rectangle 
+                    HorizontalOptions="Fill"
+                    HeightRequest="2"
+                    Stroke="Transparent"
+                    Fill="{StaticResource LightBorderColor}"/>
+
+                <Label 
+                    LineBreakMode="WordWrap"
+                    Style="{StaticResource GameDetailsTextStyle}"
+                    Text="{Binding Description}"/>
+
+                <Rectangle 
+                    HorizontalOptions="Fill"
+                    HeightRequest="2"
+                    Stroke="Transparent"
+                    Fill="{StaticResource LightBorderColor}"/>
+
+                <Label 
+                    Style="{StaticResource GameHeaderSubtitleStyle}"
+                    Text="Gallery"/>
+
+
+
+                <CollectionView 
+                    Margin="0,-6,0,0"
+                    HeightRequest="400"
+                    WidthRequest="400"
+                    ItemsSource="{Binding Images}">
+
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout
+                            Orientation="Vertical"
+                            ItemSpacing="16">
+                        </LinearItemsLayout>
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Image
+                                Source="{Binding .}"
+                                Aspect="AspectFill"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center">
+
+                            </Image>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+                <Rectangle 
+                    HorizontalOptions="Fill"
+                    HeightRequest="2"
+                    Stroke="Transparent"
+                    Fill="{StaticResource LightBorderColor}"/>
+
+                <Label 
+                    Style="{StaticResource GameHeaderSubtitleStyle}"
+                    Text="Reviews"/>
+                
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
 </ContentPage>
