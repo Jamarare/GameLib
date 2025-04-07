@@ -36,7 +36,7 @@ namespace Services
             {
                 Name = "Starfield",
                 Subtitle = "Explore the Infinite Unknown",
-                HeroImage = "starfield.png",
+                HeroImage = "starfield1.png",
                 Description = "Starfield offers an immersive space exploration experience...",
                 AccentColorStart = Color.FromArgb("#0A3555"),
                 AccentColorEnd = Color.FromArgb("#1F5A80"),
