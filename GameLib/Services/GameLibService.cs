@@ -30,8 +30,10 @@ namespace Services
                 AccentColorStart = Color.FromArgb("#7F3F30"),
                 AccentColorEnd = Color.FromArgb("#D08B59"),
                 Category = "Action",
-                Images = new() { }
+                Images = new() { },
+                ReviewsUrl = "https://www.metacritic.com/game/hogwarts-legacy/user-reviews/?platform=pc" // Uus omadus
             },
+
             new()
             {
                 Name = "Starfield",
@@ -158,15 +160,16 @@ namespace Services
         public static List<Games> GetFeaturedGames()
         {
             var random = new Random();
-            var randomizePlanets = games
+            var randomizeGames = games
                 .OrderBy(item => random.Next());
 
-            return randomizePlanets
+            return randomizeGames
                 .Take(2)
                 .ToList();
         }
 
         public static List<Games> GetAllGames()
             => games;
+
     }
 }

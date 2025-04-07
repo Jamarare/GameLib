@@ -121,8 +121,49 @@
 
                 <Label 
                     Style="{StaticResource GameHeaderSubtitleStyle}"
+                    Text="Download"/>
+
+                <Grid>
+                    <ImageButton
+                        WidthRequest="48"
+                        HeightRequest="48"
+                        Source="steam.jpg"
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        HorizontalOptions="Start"
+                        VerticalOptions="Center"
+                        Clicked="BackButton_Clicked" />
+
+                    <ImageButton
+                            WidthRequest="48"
+                            HeightRequest="48"
+                            Source="epicgames.jpg"
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center"
+                            Clicked="BackButton_Clicked" />
+                </Grid>
+
+
+                <Rectangle 
+                    HorizontalOptions="Fill"
+                    HeightRequest="2"
+                    Stroke="Transparent"
+                    Fill="{StaticResource LightBorderColor}"/>
+
+                <Label 
+                    Style="{StaticResource GameHeaderSubtitleStyle}"
                     Text="Reviews"/>
-                
+
+                <Label 
+                    Text="Read reviews on Metacritic"
+                    TextColor="Blue">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnReviewsTapped" />
+                    </Label.GestureRecognizers>
+                </Label>
+
             </VerticalStackLayout>
         </ScrollView>
     </Grid>
