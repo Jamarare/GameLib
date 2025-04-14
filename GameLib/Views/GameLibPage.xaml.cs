@@ -1,9 +1,12 @@
+
 namespace Views;
 
 public partial class GameLibPage : ContentPage
 {
-	public GameLibPage()
-	{
+    public GameLibPage()
+    {
         InitializeComponent();
-	}
+    }
+
+
 }

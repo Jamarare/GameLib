@@ -6,11 +6,11 @@ using Microsoft.VisualBasic;
 
 namespace Models
 {
-    class CategoryViewModel
+    class CategoriesViewModel
     {
         ObservableCollection<Category> Categories { get; set; }
 
-        public CategoryViewModel() 
+        public CategoriesViewModel() 
         {
             Categories = new ObservableCollection<Category>
             {

@@ -65,6 +65,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Views\GameLibCategoriesPage.xaml.cs">
+	    <DependentUpon>GameLibCategoriesPage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="Views\GameLibCategoriesPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
