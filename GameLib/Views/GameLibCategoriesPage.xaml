@@ -2,24 +2,36 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Models"
              x:Class="Views.GameLibCategoriesPage"
+             x:Name="GameLibCategoriesClick"
              Title="Categories">
 
     <ContentPage.BindingContext>
         <local:CategoriesViewModel/>
     </ContentPage.BindingContext>
 
-    <ScrollView>
-        <CollectionView ItemsSource="{Binding Category}" ItemsLayout="VerticalGrid, 2" Margin="10">
+    <ScrollView Orientation="Vertical">
+        <CollectionView ItemsSource="{Binding Category}" 
+                        Margin="10" 
+                        HorizontalScrollBarVisibility="Never">
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical"/>
+            </CollectionView.ItemsLayout>
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Frame Padding="10" CornerRadius="15" HasShadow="True" Margin="5" BackgroundColor="White">
-                        <VerticalStackLayout HorizontalOptions="Center">
+                    <Frame Padding="10" Margin="5" CornerRadius="10" BackgroundColor="#f0f0f0">
+                        <StackLayout Padding="10" Margin="5" Orientation="Horizontal" VerticalOptions="Center" Spacing="10"> 
                             <Image Source="{Binding Icon}" WidthRequest="60" HeightRequest="60"/>
-                            <Label Text="{Binding Name}" FontSize="16" HorizontalOptions="Center"/>
-                        </VerticalStackLayout>
+                            <Label Text="{Binding Name}" FontSize="16" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
+                        </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding BindingContext.CategorySelectedCommand, Source={x:Reference Name=GameLibCategoriesClick}}" 
+                                                  CommandParameter="{Binding .}" />
+                        </Frame.GestureRecognizers>
                     </Frame>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
     </ScrollView>
 </ContentPage>
+
+    
