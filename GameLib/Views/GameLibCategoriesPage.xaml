@@ -18,7 +18,7 @@
             </CollectionView.ItemsLayout>
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Frame Padding="10" Margin="5" CornerRadius="10" BackgroundColor="#f0f0f0">
+                    <Frame Padding="0" Margin="5" CornerRadius="0" HasShadow="False" BackgroundColor="Transparent">
                         <StackLayout Padding="10" Margin="5" Orientation="Horizontal" VerticalOptions="Center" Spacing="10"> 
                             <Image Source="{Binding Icon}" WidthRequest="60" HeightRequest="60"/>
                             <Label Text="{Binding Name}" FontSize="16" HorizontalOptions="StartAndExpand" VerticalOptions="Center"/>
