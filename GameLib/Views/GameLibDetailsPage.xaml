@@ -140,7 +140,9 @@
                         Grid.Column="0"
                         HorizontalOptions="Start"
                         VerticalOptions="Center"
-                        Clicked="BackButton_Clicked" />
+                        Clicked="BackButton_Clicked"
+                        Margin="5"
+                        BackgroundColor="Transparent"/>
 
                     <ImageButton
                             WidthRequest="48"
@@ -150,27 +152,33 @@
                             Grid.Column="1"
                             HorizontalOptions="Start"
                             VerticalOptions="Center"
-                            Clicked="BackButton_Clicked" />
+                            Clicked="BackButton_Clicked" 
+                            Margin="5"
+                            BackgroundColor="Transparent"/>
 
                     <ImageButton
                             WidthRequest="48"
                             HeightRequest="48"
-                            Source="ubisoft.png"
+                            Source="ubisofticon.png"
                             Grid.Row="0"
                             Grid.Column="2"
                             HorizontalOptions="Start"
                             VerticalOptions="Center"
-                            Clicked="BackButton_Clicked" />
+                            Clicked="BackButton_Clicked" 
+                            Margin="5"
+                            BackgroundColor="Transparent"/>
 
                     <ImageButton
                             WidthRequest="48"
                             HeightRequest="48"
-                            Source="xbox.png"
+                            Source="xboxicon.png"
                             Grid.Row="0"
                             Grid.Column="3"
                             HorizontalOptions="Start"
                             VerticalOptions="Center"
-                            Clicked="BackButton_Clicked" />
+                            Clicked="BackButton_Clicked"
+                            Margin="5"
+                            BackgroundColor="Transparent"/>
 
                     <ImageButton
                             WidthRequest="48"
@@ -180,7 +188,9 @@
                             Grid.Column="4"
                             HorizontalOptions="Start"
                             VerticalOptions="Center"
-                            Clicked="BackButton_Clicked" />
+                            Clicked="BackButton_Clicked"
+                            Margin="5"
+                            BackgroundColor="Transparent"/>
 
                     <ImageButton
                             WidthRequest="48"
@@ -190,7 +200,9 @@
                             Grid.Column="5"
                             HorizontalOptions="Start"
                             VerticalOptions="Center"
-                            Clicked="BackButton_Clicked" />
+                            Clicked="BackButton_Clicked" 
+                            Margin="5"
+                            BackgroundColor="Transparent"/>
                 </Grid>
 
 
