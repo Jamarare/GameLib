@@ -20,9 +20,9 @@
             VerticalOptions="Start"
             HorizontalOptions="Center"
             TranslationX="0"
-            TranslationY="130"
-            WidthRequest="300"
-            HeightRequest="300"/>
+            TranslationY="0"
+            WidthRequest="500"
+            HeightRequest="500"/>
 
         <Image 
             x:Name="imgSteam"
@@ -30,10 +30,10 @@
             Source="steam.png"
             VerticalOptions="Center"
             HorizontalOptions="Start"
-            TranslationX="30"
+            TranslationX="90"
             TranslationY="-64"
-            WidthRequest="100"
-            HeightRequest="100"/>
+            WidthRequest="75"
+            HeightRequest="75"/>
 
         <Image 
             x:Name="imgUbisoft"
@@ -41,22 +41,22 @@
             Source="ubisoft.png"
             VerticalOptions="Center"
             HorizontalOptions="Center"
-            TranslationX="-10"
-            TranslationY="40"
-            WidthRequest="200"
-            HeightRequest="200"/>
+            TranslationX="-0"
+            TranslationY="-45"
+            WidthRequest="113"
+            HeightRequest="113"/>
 
         <Image 
-            x:Name="imgValve"
+            x:Name="imgEpic"
             Opacity="0"
-            Source="valve.png"
+            Source="epic.png"
             VerticalOptions="Start"
             HorizontalOptions="Start"
-            TranslationX="10"
-            TranslationY="40"
-            WidthRequest="200"
-            HeightRequest="200"
-            Rotation="-30"/>
+            TranslationX="90"
+            TranslationY="590"
+            WidthRequest="73"
+            HeightRequest="73"
+            Rotation="0"/>
 
 
         <Image 
@@ -65,10 +65,10 @@
             Source="rockstar.png"
             VerticalOptions="Center"
             HorizontalOptions="End"
-            TranslationX="-30"
-            TranslationY="-15"
-            WidthRequest="120"
-            HeightRequest="120"/>
+            TranslationX="-225"
+            TranslationY="45"
+            WidthRequest="80"
+            HeightRequest="80"/>
 
         <Image 
             x:Name="imgXbox"
@@ -76,10 +76,21 @@
             Source="xbox.png"
             VerticalOptions="Start"
             HorizontalOptions="End"
-            TranslationX="-30"
-            TranslationY="50"
-            WidthRequest="220"
-            HeightRequest="220"/>
+            TranslationX="-45"
+            TranslationY="480"
+            WidthRequest="160"
+            HeightRequest="146"/>
+
+        <Image 
+            x:Name="imgGog"
+            Opacity="100"
+            Source="gog.png"
+            VerticalOptions="Start"
+            HorizontalOptions="End"
+            TranslationX="-80"
+            TranslationY="580"
+            WidthRequest="90"
+            HeightRequest="90"/>
 
         <!--intro box-->
 
