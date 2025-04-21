@@ -5,7 +5,6 @@
              x:Class="Views.GameLibPage"
              Title="GameLibPage">
 
-
     <Grid
         IgnoreSafeArea="{OnPlatform Android=False, iOS=True}">
 
@@ -15,8 +14,8 @@
 
             <Grid.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                    <GradientStop Color="#666666" Offset="0.0" />
-                    <GradientStop Color="#000000" Offset="1.0" />
+                    <GradientStop Color="#edd4a8" Offset="0.0" />
+                    <GradientStop Color="#c47" Offset="1.0" />
                 </LinearGradientBrush>
             </Grid.Background>
 
@@ -24,54 +23,12 @@
                 <TapGestureRecognizer Tapped="GridArea_Tapped" />
             </Grid.GestureRecognizers>
 
-            <VerticalStackLayout
-                Margin="0,52,24,0"
-                HorizontalOptions="End"
-                Spacing="20">
-
-                <Label 
-                    Text="MENU"
-                    Style="{StaticResource PageHeaderStyle}"
-                    HorizontalOptions="End"/>
-
-                <Label 
-                    Text="Option 1 (with icon)"
-                    Style="{StaticResource PageHeaderSubtitleStyle}"
-                    HorizontalOptions="End"/>
-
-                <Label 
-                    Text="Option 2 (with icon)"
-                    Style="{StaticResource PageHeaderSubtitleStyle}"
-                    HorizontalOptions="End"/>
-
-                <Label 
-                    Text="Option 3 (with icon)"
-                    Style="{StaticResource PageHeaderSubtitleStyle}"
-                    HorizontalOptions="End"/>
-
-                <Label 
-                    Text="Option 4 (with icon)"
-                    Style="{StaticResource PageHeaderSubtitleStyle}"
-                    HorizontalOptions="End"/>
-
-                <Label 
-                    Text="Option 5 (with icon)"
-                    Style="{StaticResource PageHeaderSubtitleStyle}"
-                    HorizontalOptions="End"/>
-
-                <Label 
-                    Text="Option 6 (with icon)"
-                    Style="{StaticResource PageHeaderSubtitleStyle}"
-                    HorizontalOptions="End"/>
-
-            </VerticalStackLayout>
         </Grid>
 
         <Grid
             x:Name="MainContentGrid"
             Padding="24,52,24,0"
             IgnoreSafeArea="{OnPlatform Android= False, iOS=True}"
-            BackgroundColor="{StaticResource PageBackgroundColor}"
             ColumnDefinitions="*, Auto"
             RowDefinitions="Auto,*">
 
@@ -90,41 +47,6 @@
                     Text="The milky way galaxy" />
 
             </VerticalStackLayout>
-
-            <Border
-                WidthRequest="56"
-                HeightRequest="56"
-                VerticalOptions="Center"
-                HorizontalOptions="End"
-                Stroke="{StaticResource LightBorderColor}"
-                StrokeThickness="6"
-                Grid.Row="0"
-                Grid.Column="1">
-
-                <Border.StrokeShape>
-                    <RoundRectangle CornerRadius="28" />
-                </Border.StrokeShape>
-
-                <Border.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="ProfilePic_Clicked" />
-                </Border.GestureRecognizers>
-
-                <Image
-                    VerticalOptions="Center"
-                    HorizontalOptions="Center"
-                    WidthRequest="50"
-                    HeightRequest="50"
-                    Source="profilepic.jpeg">
-                    <Image.Clip>
-                        <EllipseGeometry 
-                            Center="25,25"
-                            RadiusX="25"
-                            RadiusY="25" />
-                    </Image.Clip>
-
-                </Image>
-
-            </Border>
 
             <ScrollView
                 Grid.Row="1"
@@ -242,7 +164,7 @@
                         Margin="0,12,0,0">
                         <Label.FormattedText>
                             <FormattedString>
-                                <Span Text="you may also like   " />
+                                <Span Text="All games   " />
                                 <Span Text="→" FontSize="20" />
                             </FormattedString>
                         </Label.FormattedText>
@@ -250,14 +172,13 @@
 
                     <CollectionView
                         x:Name="lstAllGames"
-                        HeightRequest="160"
-                        SelectionMode="Single"
+                        SelectionMode="Multiple"
                         SelectionChanged="Games_SelectionChanged">
 
                         <CollectionView.ItemsLayout>
                             <LinearItemsLayout
-                                Orientation="Horizontal"
-                                ItemSpacing="16" />
+                                Orientation="Vertical"
+                                Span="3" />
                         </CollectionView.ItemsLayout>
 
                         <CollectionView.ItemTemplate>
@@ -265,7 +186,6 @@
                                 x:DataType="models:Games">
                                 <Border
                                     VerticalOptions="Fill"
-                                    WidthRequest="140"
                                     StrokeThickness="0"
                                     Background="{Binding Background}"
                                     Padding="16">
@@ -298,76 +218,6 @@
                     </CollectionView>
                 </VerticalStackLayout>
             </ScrollView>
-
-
-            <Border
-                Padding="16,0"
-                BackgroundColor="#393965"
-                Stroke="{StaticResource BorderColor}"
-                HorizontalOptions="Fill"
-                VerticalOptions="End"
-                Margin="0,0,0,20"
-                HeightRequest="90"
-                Grid.Row="1"
-                Grid.Column="0"
-                Grid.ColumnSpan="2">
-                <Border.StrokeShape>
-                    <RoundRectangle CornerRadius="45" />
-                </Border.StrokeShape>
-
-                <Grid
-                    HorizontalOptions="Fill"
-                    VerticalOptions="Center"
-                    RowDefinitions="Auto,Auto"
-                    ColumnDefinitions="*,*,*"
-                    RowSpacing="6">
-
-                    <Image 
-                        WidthRequest="30"
-                        HeightRequest="30"
-                        Source="imgexplore.png"
-                        Grid.Row="0"
-                        Grid.Column="0"
-                        HorizontalOptions="Center"/>
-                    <Label 
-                        Text="Explore"
-                        Grid.Row="1"
-                        Grid.Column="0"
-                        HorizontalOptions="Center"
-                        Style="{StaticResource MenuLabelStyle}"/>
-
-                    <Image 
-                        WidthRequest="30"
-                        HeightRequest="30"
-                        Source="imgfavorite.png"
-                        Grid.Row="0"
-                        Grid.Column="1"
-                        HorizontalOptions="Center"/>
-                    <Label 
-                        Text="Favorite"
-                        Grid.Row="1"
-                        Grid.Column="1"
-                        HorizontalOptions="Center"
-                        Style="{StaticResource MenuLabelStyle}"/>
-
-                    <Image 
-                        WidthRequest="30"
-                        HeightRequest="30"
-                        Source="imgprofile.png"
-                        Grid.Row="0"
-                        Grid.Column="2"
-                        HorizontalOptions="Center"/>
-                    <Label 
-                        Text="Profile"
-                        Grid.Row="1"
-                        Grid.Column="2"
-                        HorizontalOptions="Center"
-                        Style="{StaticResource MenuLabelStyle}"/>
-
-                </Grid>
-            </Border>
-
         </Grid>
-
     </Grid>
 </ContentPage>
