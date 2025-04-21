@@ -16,6 +16,12 @@ namespace Models
         public Color AccentColorEnd { get; set; }
         public List<string> Images { get; set; }
         public string ReviewsUrl { get; set; }
+        public string Steam {  get; set; }
+        public string EpicGames {  get; set; }
+        public string Ubisoft { get; set; }
+        public string Xbox { get; set; }
+        public string RockstarGames { get; set; }
+        public string GOG { get; set; }
 
         public Brush Background
         {

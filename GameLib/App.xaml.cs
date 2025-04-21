@@ -31,7 +31,7 @@ namespace GameLib
             });
 
             MainPage = new GameLibDetailsPage(
-Services.GameLibService.GetAllGames().First(p => p.Name == "Hogwarts Legacy"));
+Services.GameLibService.GetAllGames().First(p => p.Name == "Resident Evil 4"));
         }
     }
 }

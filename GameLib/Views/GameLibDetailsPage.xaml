@@ -5,8 +5,8 @@
              Title="GameLibDetailsPage">
     <ContentPage.Background>
         <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-            <GradientStop Color="Black" Offset="0.0" />
-            <GradientStop Color="#180161" Offset="1.0" />
+            <GradientStop Color="#edd4a8" Offset="0.0" />
+            <GradientStop Color="#c47" Offset="1.0" />
         </LinearGradientBrush>
     </ContentPage.Background>
 
@@ -124,10 +124,18 @@
                     Text="Download"/>
 
                 <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
                     <ImageButton
                         WidthRequest="48"
                         HeightRequest="48"
-                        Source="steam.jpg"
+                        Source="steam.png"
                         Grid.Row="0"
                         Grid.Column="0"
                         HorizontalOptions="Start"
@@ -137,9 +145,49 @@
                     <ImageButton
                             WidthRequest="48"
                             HeightRequest="48"
-                            Source="epicgames.jpg"
+                            Source="epic.png"
                             Grid.Row="0"
                             Grid.Column="1"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center"
+                            Clicked="BackButton_Clicked" />
+
+                    <ImageButton
+                            WidthRequest="48"
+                            HeightRequest="48"
+                            Source="ubisoft.png"
+                            Grid.Row="0"
+                            Grid.Column="2"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center"
+                            Clicked="BackButton_Clicked" />
+
+                    <ImageButton
+                            WidthRequest="48"
+                            HeightRequest="48"
+                            Source="xbox.png"
+                            Grid.Row="0"
+                            Grid.Column="3"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center"
+                            Clicked="BackButton_Clicked" />
+
+                    <ImageButton
+                            WidthRequest="48"
+                            HeightRequest="48"
+                            Source="rockstar.png"
+                            Grid.Row="0"
+                            Grid.Column="4"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center"
+                            Clicked="BackButton_Clicked" />
+
+                    <ImageButton
+                            WidthRequest="48"
+                            HeightRequest="48"
+                            Source="gog.png"
+                            Grid.Row="0"
+                            Grid.Column="5"
                             HorizontalOptions="Start"
                             VerticalOptions="Center"
                             Clicked="BackButton_Clicked" />
