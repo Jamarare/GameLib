@@ -1,12 +1,138 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Views.StartPage"
+             x:Class="MauiPlanets.Views.StartPage"
              Title="StartPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#edd4a8" Offset="0.0" />
+            <GradientStop Color="#c47" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <Grid>
+        <!--Planets image-->
+        <Image 
+            x:Name="imgLogo"
+            Opacity="0"
+            Source="logo.png"
+            VerticalOptions="Start"
+            HorizontalOptions="Center"
+            TranslationX="0"
+            TranslationY="0"
+            WidthRequest="500"
+            HeightRequest="500"/>
+
+        <Image 
+            x:Name="imgSteam"
+            Opacity="100"
+            Source="steam.png"
+            VerticalOptions="Center"
+            HorizontalOptions="Start"
+            TranslationX="90"
+            TranslationY="-64"
+            WidthRequest="75"
+            HeightRequest="75"/>
+
+        <Image 
+            x:Name="imgUbisoft"
+            Opacity="0"
+            Source="ubisoft.png"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            TranslationX="-0"
+            TranslationY="-45"
+            WidthRequest="113"
+            HeightRequest="113"/>
+
+        <Image 
+            x:Name="imgEpic"
+            Opacity="0"
+            Source="epic.png"
+            VerticalOptions="Start"
+            HorizontalOptions="Start"
+            TranslationX="90"
+            TranslationY="590"
+            WidthRequest="73"
+            HeightRequest="73"
+            Rotation="0"/>
+
+
+        <Image 
+            x:Name="imgRockstar"
+            Opacity="0"
+            Source="rockstar.png"
+            VerticalOptions="Center"
+            HorizontalOptions="End"
+            TranslationX="-225"
+            TranslationY="45"
+            WidthRequest="80"
+            HeightRequest="80"/>
+
+        <Image 
+            x:Name="imgXbox"
+            Opacity="0"
+            Source="xbox.png"
+            VerticalOptions="Start"
+            HorizontalOptions="End"
+            TranslationX="-45"
+            TranslationY="480"
+            WidthRequest="160"
+            HeightRequest="146"/>
+
+        <Image 
+            x:Name="imgGog"
+            Opacity="100"
+            Source="gog.png"
+            VerticalOptions="Start"
+            HorizontalOptions="End"
+            TranslationX="-80"
+            TranslationY="580"
+            WidthRequest="90"
+            HeightRequest="90"/>
+
+        <!--intro box-->
+
+        <Border
+            x:Name="imgIntro"
+            Opacity="0"
+            Padding="24,32"
+            BackgroundColor="{StaticResource FrameBackgroundColor}"
+            Stroke="{StaticResource BorderColor}"
+            HorizontalOptions="Fill"
+            VerticalOptions="End"
+            Margin="20">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="24"/>
+            </Border.StrokeShape>
+
+            <VerticalStackLayout
+                Spacing="16">
+
+                <Label 
+                    HorizontalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                    Style="{StaticResource IntroPageHeaderStyle}"
+                    Text="Welcome to GameLib!" />
+
+                <Label 
+                    HorizontalOptions="Center"
+                    HorizontalTextAlignment="Center"
+                    LineBreakMode="WordWrap"
+                    Style="{StaticResource IntroPageHeaderStyle}"
+                    Text="Here you can find games to play with your friends, solo, or with family, also your can find any other game in your taste"/>
+
+                <Button 
+                    HorizontalOptions="Center"
+                    Margin="0,12,0,6"
+                    Style="{StaticResource ButtonStyle}"
+                    Text="Explore games!"
+                    Clicked="ExploreNow_Clicked"/>
+            </VerticalStackLayout>
+
+        </Border>
+
+    </Grid>
+
 </ContentPage>

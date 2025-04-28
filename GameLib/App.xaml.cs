@@ -1,9 +1,10 @@
-﻿﻿#if WINDOWS
+﻿#if WINDOWS
 using Microsoft.UI;
 using Microsoft.UI.Windowing;
 using Windows.Graphics;
 #endif
 
+using MauiPlanets.Views;
 using Views;
 
 namespace GameLib
