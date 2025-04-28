@@ -1,9 +1,39 @@
+using Models;
+using Services;
+
 namespace Views;
 
 public partial class GameLibPage : ContentPage
 {
-	public GameLibPage()
-	{
+    private const uint AnimationDuration = 800u;
+
+    public GameLibPage()
+    {
         InitializeComponent();
-	}
+    }
+
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+
+        lstPopularGames.ItemsSource = GameLibService.GetFeaturedGames();
+        lstAllGames.ItemsSource = GameLibService.GetAllGames();
+    }
+
+    async void Games_SelectionChanged(System.Object sender, Microsoft.Maui.Controls.SelectionChangedEventArgs e)
+    {
+        await Navigation.PushAsync(new GameLibDetailsPage(e.CurrentSelection.First() as Games));
+    }
+
+    async void GridArea_Tapped(System.Object sender, System.EventArgs e)
+    {
+        await CloseMenu();
+    }
+
+    private async Task CloseMenu()
+    {
+        _ = MainContentGrid.FadeTo(1, AnimationDuration);
+        _ = MainContentGrid.ScaleTo(1, AnimationDuration);
+        await MainContentGrid.TranslateTo(0, 0, AnimationDuration, Easing.CubicIn);
+    }
 }
