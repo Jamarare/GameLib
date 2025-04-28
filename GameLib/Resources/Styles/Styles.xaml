@@ -1,4 +1,5 @@
-﻿
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-comp compile="true" ?>
 <ResourceDictionary 
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
@@ -56,39 +57,35 @@
         <Setter Property="TextColor" Value="{StaticResource LightTextColor}" />
     </Style>
 
-    <Style TargetType="Label" x:Key="MenuLabelStyle" BasedOn="{StaticResource BaseRegularLabelStyle}">
-        <Setter Property="FontSize" Value="14" />
+    <Style TargetType="Label" x:Key="MenuLabelStyle" BasedOn="{StaticResource BaseMediumLabelStyle}">
+        <Setter Property="FontSize" Value="20" />
         <Setter Property="TextColor" Value="#CCCCCC" />
     </Style>
 
-    <Style TargetType="Label" x:Key="PageSubHeaderStyle" BasedOn="{StaticResource BaseMediumLabelStyle}">
-        <Setter Property="FontSize" Value="20" />
-        <Setter Property="TextColor" Value="{StaticResource LightTextColor}" />
-    </Style>
-
-    <Style TargetType="Label" x:Key="FeaturedPlanetHeaderStyle" BasedOn="{StaticResource BaseMediumLabelStyle}">
+    <Style TargetType="Label" x:Key="FeaturedGameHeaderStyle" BasedOn="{StaticResource BaseMediumLabelStyle}">
         <Setter Property="FontSize" Value="22" />
         <Setter Property="TextColor" Value="{StaticResource LightTextColor}" />
     </Style>
 
-    <Style TargetType="Label" x:Key="FeaturedPlanetHeaderSubtitleStyle" BasedOn="{StaticResource BaseMediumLabelStyle}">
+    <Style TargetType="Label" x:Key="FeaturedGameHeaderSubtitleStyle" BasedOn="{StaticResource BaseMediumLabelStyle}">
         <Setter Property="FontSize" Value="18" />
         <Setter Property="TextColor" Value="{StaticResource LightTextColor}" />
     </Style>
 
-    <Style TargetType="Label" x:Key="AllPlanetHeaderSubtitleStyle" BasedOn="{StaticResource BaseRegularLabelStyle}">
+    <Style TargetType="Label" x:Key="AllGameHeaderSubtitleStyle" BasedOn="{StaticResource BaseRegularLabelStyle}">
         <Setter Property="FontSize" Value="12" />
         <Setter Property="TextColor" Value="{StaticResource LightTextColor}" />
     </Style>
 
-    <Style TargetType="Label" x:Key="PlanetHeaderSubtitleStyle" BasedOn="{StaticResource BaseRegularLabelStyle}">
+    <Style TargetType="Label" x:Key="GameHeaderSubtitleStyle" BasedOn="{StaticResource BaseRegularLabelStyle}">
         <Setter Property="FontSize" Value="22" />
         <Setter Property="TextColor" Value="{StaticResource LightTextColor}" />
     </Style>
 
-    <Style TargetType="Label" x:Key="PlanetDetailsTextStyle" BasedOn="{StaticResource BaseRegularLabelStyle}">
+    <Style TargetType="Label" x:Key="GameDetailsTextStyle" BasedOn="{StaticResource BaseRegularLabelStyle}">
         <Setter Property="FontSize" Value="16" />
         <Setter Property="TextColor" Value="{StaticResource LightTextColor}" />
     </Style>
+
 
 </ResourceDictionary>
