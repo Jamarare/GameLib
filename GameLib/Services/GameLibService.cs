@@ -26,12 +26,6 @@ namespace Services
                     "https://sm.ign.com/t/ign_ap/feature/b/baldurs-ga/baldurs-gate-3-review-in-progress_xmcd.1280.jpg"
                 },
                 ReviewsUrl = "https://www.metacritic.com/game/baldurs-gate-3/user-reviews/?platform=pc",
-                Steam = "",
-                EpicGames = "",
-                Ubisoft = "",
-                Xbox = "",
-                RockstarGames = "",
-                GOG = ""
             },
             new()
             {
@@ -49,12 +43,6 @@ namespace Services
                     "https://cdn.potterish.com/wp-content/2020/09/harry-potter-hogwarts-legacy-hogwarts-noite-carruagem.png"
                 },
                 ReviewsUrl = "https://www.metacritic.com/game/hogwarts-legacy/user-reviews/?platform=pc",
-                Steam = "",
-                EpicGames = "",
-                Ubisoft = "",
-                Xbox = "",
-                RockstarGames = "",
-                GOG = ""
             },
 
             new()
@@ -73,12 +61,6 @@ namespace Services
                     "https://images.ctfassets.net/rporu91m20dc/mRbSMyERZlqi8uy0NPx9x/e416581ee1733a37eb61a3a2c57c11d0/Starfield_Combat.jpg"
                 },
                 ReviewsUrl = "https://www.metacritic.com/game/starfield/user-reviews/?platform=pc",
-                Steam = "",
-                EpicGames = "",
-                Ubisoft = "",
-                Xbox = "",
-                RockstarGames = "",
-                GOG = ""
             },
             new()
             {
@@ -97,12 +79,6 @@ namespace Services
 
                 },
                 ReviewsUrl = "https://www.metacritic.com/game/resident-evil-4/user-reviews/?platform=pc",
-                Steam = "",
-                EpicGames = "",
-                Ubisoft = "",
-                Xbox = "",
-                RockstarGames = "",
-                GOG = ""
             },
             new()
             {
@@ -120,12 +96,6 @@ namespace Services
                     "https://thenerdstash.com/wp-content/uploads/2023/03/sons-of-the-forest-build-on-water.jpg"
                 },
                 ReviewsUrl = "https://www.metacritic.com/game/sons-of-the-forest/user-reviews/?platform=pc",
-                Steam = "",
-                EpicGames = "",
-                Ubisoft = "",
-                Xbox = "",
-                RockstarGames = "",
-                GOG = ""
             },
             new()
             {
@@ -143,13 +113,6 @@ namespace Services
                     "https://i.ytimg.com/vi/Pe_xO_CZa8o/maxresdefault.jpg"
                 },
                 ReviewsUrl = "https://www.metacritic.com/game/the-finals/user-reviews/?platform=pc",
-                Steam = "",
-                EpicGames = "",
-                Ubisoft = "",
-                Xbox = "",
-                RockstarGames = "",
-                GOG = ""
-
             },
             new()
             {
@@ -167,12 +130,6 @@ namespace Services
                     "https://derivates.kicker.de/image/upload/c_crop%2Cx_393%2Cy_120%2Cw_3213%2Ch_1807/w_1200%2Cq_auto/v1/2024/06/13/711d16f4-528c-4f1d-a396-328ccebb5b74.jpeg"
                 },
                 ReviewsUrl = "https://www.metacritic.com/game/ea-sports-fc-24/user-reviews/?platform=pc",
-                Steam = "",
-                EpicGames = "",
-                Ubisoft = "",
-                Xbox = "",
-                RockstarGames = "",
-                GOG = ""
             },
             new()
             {
@@ -190,12 +147,6 @@ namespace Services
                     "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/11/suits-lethal-company.jpg"
                 },
                 ReviewsUrl = "https://www.metacritic.com/game/lethal-company/",
-                Steam = "",
-                EpicGames = "",
-                Ubisoft = "",
-                Xbox = "",
-                RockstarGames = "",
-                GOG = ""
             },
             new()
             {
@@ -213,12 +164,6 @@ namespace Services
                     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmZdf_VCCCKbzV0CHDVg5I1yGF6L53_w5oa8YpSAKqCQ30Hb0czaSxjISK9s9etZIIbr3RnKlygqrYftBy8BmQo7vIOZ5uq8_MtIVePwUNWhJV1Oj_JHw_P5DAptcA1WL0a4Y1QhM1Khll87-e_ezMFi4ytGn7DeDbL3Tf3fVM1TmSqxSa8E9cOGKV/s3840/Overwatch2_9.JPG"
                 },
                 ReviewsUrl = "https://www.metacritic.com/game/overwatch-2/user-reviews/?platform=pc",
-                Steam = "",
-                EpicGames = "",
-                Ubisoft = "",
-                Xbox = "",
-                RockstarGames = "",
-                GOG = ""
             },
             new()
             {
@@ -236,12 +181,6 @@ namespace Services
                     "https://cdn.wccftech.com/wp-content/uploads/2022/05/WCCFstarwarsjedisurvivor1.jpg"
                 },
                 ReviewsUrl = "https://www.metacritic.com/game/star-wars-jedi-survivor/user-reviews/?platform=pc",
-                Steam = "",
-                EpicGames = "",
-                Ubisoft = "",
-                Xbox = "",
-                RockstarGames = "",
-                GOG = ""
             },
             new()
             {
@@ -259,12 +198,6 @@ namespace Services
                     "https://images.steamusercontent.com/ugc/596931496814107809/647654186D80910A72A11C7FE3A474622D080C82/?imw=1024&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"
                 },
                 ReviewsUrl = "https://www.metacritic.com/game/league-of-legends/user-reviews/?platform=pc",
-                Steam = "",
-                EpicGames = "",
-                Ubisoft = "",
-                Xbox = "",
-                RockstarGames = "",
-                GOG = ""
             },
             new()
             {
@@ -282,12 +215,6 @@ namespace Services
                     "https://miro.medium.com/v2/resize:fit:1400/1*bjX2HdOx9RyFecPCbmOl4w.jpeg"
                 },
                 ReviewsUrl = "https://www.metacritic.com/game/dota-2/user-reviews/?platform=pc",
-                Steam = "",
-                EpicGames = "",
-                Ubisoft = "",
-                Xbox = "",
-                RockstarGames = "",
-                GOG = ""
             },
             new()
             {
@@ -305,12 +232,6 @@ namespace Services
                     "https://assets.gamearena.gg/wp-content/uploads/2023/06/29234014/Mirage-CS2-1024x577.jpg"
                 },
                 ReviewsUrl = "https://www.metacritic.com/game/counter-strike-2/user-reviews/?platform=pc",
-                Steam = "",
-                EpicGames = "",
-                Ubisoft = "",
-                Xbox = "",
-                RockstarGames = "",
-                GOG = ""
             }
         };
 
