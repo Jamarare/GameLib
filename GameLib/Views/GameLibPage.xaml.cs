@@ -22,8 +22,16 @@ public partial class GameLibPage : ContentPage
 
     async void Games_SelectionChanged(System.Object sender, Microsoft.Maui.Controls.SelectionChangedEventArgs e)
     {
-        await Navigation.PushAsync(new GameLibDetailsPage(e.CurrentSelection.First() as Games));
+        var collectionView = sender as CollectionView;
+        if (e.CurrentSelection.FirstOrDefault() is Games selectedGame)
+        {
+            await Navigation.PushAsync(new GameLibDetailsPage(selectedGame));
+
+            // ????? ????????? ????? ????????
+            collectionView.SelectedItem = null;
+        }
     }
+
 
     async void GridArea_Tapped(System.Object sender, System.EventArgs e)
     {

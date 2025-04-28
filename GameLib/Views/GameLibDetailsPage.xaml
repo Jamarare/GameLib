@@ -67,7 +67,6 @@
                 <Rectangle 
                     HorizontalOptions="Fill"
                     HeightRequest="2"
-                    Stroke="Transparent"
                     Fill="{StaticResource LightBorderColor}"/>
 
                 <Label 
@@ -78,7 +77,6 @@
                 <Rectangle 
                     HorizontalOptions="Fill"
                     HeightRequest="2"
-                    Stroke="Transparent"
                     Fill="{StaticResource LightBorderColor}"/>
 
                 <Label 
@@ -116,7 +114,6 @@
                 <Rectangle 
                     HorizontalOptions="Fill"
                     HeightRequest="2"
-                    Stroke="Transparent"
                     Fill="{StaticResource LightBorderColor}"/>
 
                 <Label 

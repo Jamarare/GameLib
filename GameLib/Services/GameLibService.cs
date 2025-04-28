@@ -18,7 +18,7 @@ namespace Services
                 Description = "Baldur's Gate 3 immerses players in a rich, story-driven RPG set in the Forgotten Realms...",
                 AccentColorStart = Color.FromArgb("#2F4F4F"),
                 AccentColorEnd = Color.FromArgb("#8B7D7B"),
-                Category = "Action",
+                Category = "Action Games",
                 Images = new() 
                 {
                     "https://assets-prd.ignimgs.com/2023/08/05/astarion-1-1691263947280.png",
@@ -41,7 +41,7 @@ namespace Services
                 Description = "In Hogwarts Legacy, experience life as a young wizard or witch in the 1800s...",
                 AccentColorStart = Color.FromArgb("#7F3F30"),
                 AccentColorEnd = Color.FromArgb("#D08B59"),
-                Category = "Action",
+                Category = "Action Games",
                 Images = new() 
                 {
                     "https://cdn.potterish.com/wp-content/2020/09/harry-potter-hogwarts-legacy-erumpente_1_2.png",
@@ -65,7 +65,7 @@ namespace Services
                 Description = "Starfield offers an immersive space exploration experience...",
                 AccentColorStart = Color.FromArgb("#0A3555"),
                 AccentColorEnd = Color.FromArgb("#1F5A80"),
-                Category = "Sci-Fi",
+                Category = "RPG Games",
                 Images = new() 
                 {
                     "https://assets-prd.ignimgs.com/2022/06/12/starfield-blogroll-01-1655058857695.jpg",
@@ -88,7 +88,7 @@ namespace Services
                 Description = "Resident Evil 4 returns with stunning graphics...",
                 AccentColorStart = Color.FromArgb("#6F2121"),
                 AccentColorEnd = Color.FromArgb("#D63A3A"),
-                Category = "Horror",
+                Category = "Horror Games",
                 Images = new() 
                 {
                     "https://i.guim.co.uk/img/media/dded51b62fca770d82d7103f4b279551dd812626/120_0_3600_2160/master/3600.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=38190285417f268bb1e387a39acae567",
@@ -112,7 +112,7 @@ namespace Services
                 Description = "Sons of the Forest is a survival horror game...",
                 AccentColorStart = Color.FromArgb("#B47A3B"),
                 AccentColorEnd = Color.FromArgb("#F0A900"),
-                Category = "Horror",
+                Category = "Horror Games",
                 Images = new() 
                 {
                     "https://mirage.com.pl/_next/image?url=https%3A%2F%2Fmirage.com.pl%2Fstorage%2Fmedia%2F91c79b27-e056-4886-b6e4-abcf2dcd17a0%2Fthumbnail%2FKN2yqyuOzbMZSu8qEX5H8znZQcj1qS%2F0bd2f3aee5df95064e68518822a86910.webp&w=1920&q=75",
@@ -135,7 +135,7 @@ namespace Services
                 Description = "THE FINALS is a fast-paced, team-based shooter...",
                 AccentColorStart = Color.FromArgb("#8B5A2B"),
                 AccentColorEnd = Color.FromArgb("#D28B31"),
-                Category = "Shooter",
+                Category = "FPS Games",
                 Images = new() 
                 {
                     "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2073850/ss_d37be3e97f1dcddbd4db38ffe6eebd0fc724eec4.1920x1080.jpg?t=1743523996",
@@ -159,7 +159,7 @@ namespace Services
                 Description = "FC 24 brings realistic and immersive football gameplay to life...",
                 AccentColorStart = Color.FromArgb("#6D3420"),
                 AccentColorEnd = Color.FromArgb("#C39256"),
-                Category = "Sports",
+                Category = "Sports Games",
                 Images = new() 
                 {
                     "https://images.immediate.co.uk/production/volatile/sites/3/2024/08/ea-fc-24-carryover-rewards-f8ac441.jpg?quality=90&resize=980,654",
@@ -182,7 +182,7 @@ namespace Services
                 Description = "Lethal Company is a cooperative survival horror game...",
                 AccentColorStart = Color.FromArgb("#082F49"),
                 AccentColorEnd = Color.FromArgb("#309ACF"),
-                Category = "Horror",
+                Category = "Horror Games",
                 Images = new() 
                 {
                     "https://platform.polygon.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25116125/lethal_company_clayton.png?quality=90&strip=all&crop=7.8125,0,84.375,100",
@@ -201,11 +201,11 @@ namespace Services
             {
                 Name = "Overwatch 2",
                 Subtitle = "The Next Evolution of Team-Based Combat",
-                HeroImage = "overwatch_2.jpg",
+                HeroImage = "overwatch2.png",
                 Description = "Overwatch 2 continues the legacy of the original...",
                 AccentColorStart = Color.FromArgb("#2F1F0A"),
                 AccentColorEnd = Color.FromArgb("#C19A5A"),
-                Category = "Shooter",
+                Category = "FPS Games",
                 Images = new() 
                 {
                     "https://64.media.tumblr.com/92d4049dafd260ff4f408ab1ffaa52de/13d453f4ca1d0a56-97/s2048x3072/f5571b8dd8f61a9e00c935dec74a7c6bbff2dcab.jpg",
@@ -228,7 +228,7 @@ namespace Services
                 Description = "Star Wars Jedi: Survivor follows Cal Kestis on his journey...",
                 AccentColorStart = Color.FromArgb("#595959"),
                 AccentColorEnd = Color.FromArgb("#A9A9A9"),
-                Category = "Action",
+                Category = "Action Games",
                 Images = new() 
                 {
                     "https://oyster.ignimgs.com/mediawiki/apis.ign.com/star-wars-jedi-survivor/7/7c/STAR_WARS_Jedi_Survivor%E2%84%A2_20230422153756.png",
@@ -247,11 +247,11 @@ namespace Services
             {
                 Name = "League Of Legends",
                 Subtitle = "Master the Rift",
-                HeroImage = "league_of_legends.jpg",
+                HeroImage = "league_of_legends.png",
                 Description = "League of Legends is a competitive multiplayer online battle arena (MOBA)...",
                 AccentColorStart = Color.FromArgb("#7F4E40"),
                 AccentColorEnd = Color.FromArgb("#C29F66"),
-                Category = "MOBA",
+                Category = "MOBA Games",
                 Images = new() 
                 {
                     "https://i.imgur.com/OUBFn0l.png",
@@ -274,7 +274,7 @@ namespace Services
                 Description = "Dota 2 is a strategy-heavy multiplayer online battle arena game...",
                 AccentColorStart = Color.FromArgb("#7F3E1C"),
                 AccentColorEnd = Color.FromArgb("#D9A67B"),
-                Category = "MOBA",
+                Category = "MOBA Games",
                 Images = new() 
                 {
                     "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/570/ss_d0f973ce376ca5b6c08e081cb035e86ced105fa9.1920x1080.jpg?t=1739210483",
@@ -297,7 +297,7 @@ namespace Services
                 Description = "Counter-Strike 2 brings the iconic, team-based tactical shooter...",
                 AccentColorStart = Color.FromArgb("#505050"),
                 AccentColorEnd = Color.FromArgb("#A6A6A6"),
-                Category = "Shooter",
+                Category = "FPS Games",
                 Images = new() 
                 {
                     "https://i.pcmag.com/imagery/articles/049zi8OCKMGMf1zQYUoDBII-4..v1679505245.jpg",

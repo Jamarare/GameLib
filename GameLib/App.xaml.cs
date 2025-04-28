@@ -31,8 +31,7 @@ namespace GameLib
             #endif
             });
 
-            MainPage = new GameLibDetailsPage(
-Services.GameLibService.GetAllGames().First(p => p.Name == "Resident Evil 4"));
+            MainPage = new StartPage();
         }
     }
 }
