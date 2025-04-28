@@ -137,7 +137,6 @@
                                         <Image
                                             Grid.Row="0"
                                             Source="{Binding HeroImage}"
-                                            Rotation="-30"
                                             Aspect="AspectFill"
                                             VerticalOptions="Fill"
                                             HorizontalOptions="Fill" />
@@ -178,9 +177,8 @@
                         <CollectionView.ItemsLayout>
                             <LinearItemsLayout
                                 Orientation="Vertical"
-                                Span="3" />
+                                Span="4" />
                         </CollectionView.ItemsLayout>
-
                         <CollectionView.ItemTemplate>
                             <DataTemplate
                                 x:DataType="models:Games">
@@ -201,7 +199,6 @@
                                         <Image 
                                             Grid.Row="0"
                                             Source="{Binding HeroImage}"
-                                            Rotation="-30"
                                             Aspect="AspectFit"
                                             VerticalOptions="Fill"
                                             HorizontalOptions="Fill" />
