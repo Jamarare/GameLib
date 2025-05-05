@@ -28,11 +28,8 @@
 
             <Label 
                 Style="{StaticResource PageHeaderStyle}"
-                Text="Let's Explore"/>
+                Text="GameLib"/>
 
-            <Label 
-                Style="{StaticResource PageHeaderSubtitleStyle}"
-                Text="The milky way galaxy" />
         </VerticalStackLayout>
 
         <ScrollView
@@ -76,7 +73,7 @@
                             VerticalOptions="Center" />
 
                         <Label 
-                            Text="Search for your favorite Game"
+                            Text="Click to search"
                             Grid.Column="1"
                             VerticalOptions="Center"
                             VerticalTextAlignment="Center"
@@ -85,19 +82,19 @@
                 </Border>
 
                 <Button 
-    Text="Browse Categories"
-    Clicked="OnBrowseCategoriesClicked"
-    BackgroundColor="#cc4477"
-    TextColor="White"
-    CornerRadius="12"
-    HeightRequest="48"
-    HorizontalOptions="Center"
-    Margin="0,16,0,0"/>
+                    Text="Browse Categories"
+                    Clicked="OnBrowseCategoriesClicked"
+                    BackgroundColor="#cc4477"
+                    TextColor="White"
+                    CornerRadius="12"
+                    HeightRequest="48"
+                    HorizontalOptions="Center"
+                    Margin="0,16,0,0"/>
 
 
                 <!-- Most Popular Label -->
                 <Label
-                    Text="Most Popular"
+                    Text="Random games"
                     Style="{StaticResource PageSubHeaderStyle}"
                     Margin="0,12,0,0"/>
 
