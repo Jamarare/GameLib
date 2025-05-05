@@ -38,15 +38,5 @@
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
-
-        <!-- Game detail section -->
-        <StackLayout x:Name="GameDetailsLayout"
-                     Padding="10"
-                     IsVisible="False">
-            <Label x:Name="GameName" FontSize="20" FontAttributes="Bold" />
-            <Label x:Name="GameCategory" FontSize="16" TextColor="Gray" />
-            <Image x:Name="GameImage" HeightRequest="150" Aspect="AspectFit" />
-            <Label x:Name="GameDescription" FontSize="14" />
-        </StackLayout>
     </StackLayout>
 </ContentPage>

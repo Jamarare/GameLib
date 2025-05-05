@@ -28,24 +28,13 @@ namespace Views
             GamesListView.ItemsSource = filtered;
         }
 
-        private void OnGameSelected(object sender, SelectionChangedEventArgs e)
+        private async void OnGameSelected(object sender, SelectionChangedEventArgs e)
         {
             if (e.CurrentSelection.FirstOrDefault() is Games selectedGame)
             {
-                GameName.Text = selectedGame.Name;
-                GameCategory.Text = selectedGame.Category;
-                GameDescription.Text = selectedGame.Description;
+                await Navigation.PushAsync(new GameLibDetailsPage(selectedGame));
 
-                if (!string.IsNullOrWhiteSpace(selectedGame.HeroImage))
-                {
-                    GameImage.Source = ImageSource.FromFile(selectedGame.HeroImage);
-                }
-                else
-                {
-                    GameImage.Source = null;
-                }
-
-                GameDetailsLayout.IsVisible = true;
+                ((CollectionView)sender).SelectedItem = null;
             }
         }
     }
