@@ -24,7 +24,7 @@ namespace Models
                 new Category { Name = "Action Games", Icon = "fps_games.png"},
                 new Category { Name = "Free To Play Games", Icon = "fps_games.png"},
                 new Category { Name = "Payed Games", Icon = "fps_games.png"},
-                new Category { Name = "Horror Games", Icon = "fps_games.png"}
+                new Category { Name = "Horror Games", Icon = "horror_games.png"}
             };
             CategorySelectedCommand = new Command<Category>( async (selectedCategory) => await OnCategorySelected(selectedCategory)); 
         }

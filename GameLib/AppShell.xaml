@@ -4,10 +4,11 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:GameLib"
+    xmlns:views="clr-namespace:Views"
     Shell.FlyoutBehavior="Disabled"
     Title="GameLib">
 
     <ShellContent Route="MainPage" ContentTemplate="{DataTemplate local:MainPage}" />
-    <ShellContent Route="CategoryPage" ContentTemplate="{DataTemplate local:CategoryPage}" />
+    <ShellContent Route="Categories" ContentTemplate="{DataTemplate views:GameLibCategoriesPage}" />
 
 </Shell>
