@@ -53,6 +53,11 @@
                     HorizontalOptions="Fill"
                     Margin="0,0,24,0"
                     HeightRequest="48">
+
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnSearchBarTapped" />
+                    </Border.GestureRecognizers>
+
                     <Border.StrokeShape>
                         <RoundRectangle CornerRadius="6" />
                     </Border.StrokeShape>
@@ -78,6 +83,7 @@
                             Style="{StaticResource MenuLabelStyle}"/>
                     </Grid>
                 </Border>
+
 
                 <!-- Most Popular Label -->
                 <Label
@@ -153,7 +159,7 @@
                 <!-- All Games -->
                 <CollectionView
                     x:Name="lstAllGames"
-                    SelectionMode="Multiple"
+                    SelectionMode="Single"
                     SelectionChanged="Games_SelectionChanged">
 
                     <CollectionView.ItemsLayout>

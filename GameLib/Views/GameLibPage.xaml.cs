@@ -27,7 +27,6 @@ public partial class GameLibPage : ContentPage
         {
             await Navigation.PushAsync(new GameLibDetailsPage(selectedGame));
 
-            // ????? ????????? ????? ????????
             collectionView.SelectedItem = null;
         }
     }
@@ -37,6 +36,13 @@ public partial class GameLibPage : ContentPage
     {
         await CloseMenu();
     }
+
+    async void OnSearchBarTapped(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new SearchPage());
+    }
+
+
 
     private async Task CloseMenu()
     {
