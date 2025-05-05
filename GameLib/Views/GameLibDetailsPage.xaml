@@ -25,15 +25,6 @@
             VerticalOptions="Center"
             Clicked="BackButton_Clicked" />
 
-        <ImageButton
-            WidthRequest="24"
-            HeightRequest="24"
-            Source="imgmenu.png"
-            Grid.Row="0"
-            Grid.Column="1"
-            HorizontalOptions="End"
-            VerticalOptions="Center" />
-
 
         <ScrollView
             Grid.Row="1"

@@ -13,30 +13,59 @@
         </LinearGradientBrush>
     </ContentPage.Background>
 
-    <StackLayout Padding="20">
-        <!-- Search input -->
-        <Entry x:Name="InputView"
-               Placeholder="Search games..."
-               TextChanged="OnSearchTextChanged" />
+    <Grid
+        Margin="24,52,24,0"
+        ColumnDefinitions="*,*"
+        RowDefinitions="Auto,*">
+        <!-- Back button -->
+        <ImageButton
+            WidthRequest="24"
+            HeightRequest="24"
+            Source="imgback.png"
+            Grid.Row="0"
+            Grid.Column="0"
+            HorizontalOptions="Start"
+            VerticalOptions="Center"
+            Clicked="BackButton_Clicked" />
 
-        <!-- Game list -->
-        <CollectionView x:Name="GamesListView"
-                        SelectionMode="Single"
-                        SelectionChanged="OnGameSelected">
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <Grid Padding="10" ColumnDefinitions="*,Auto">
-                        <Label Text="{Binding Name}"
-                               FontAttributes="Bold"
-                               FontSize="18" />
-                        <Label Grid.Column="1"
-                               Text="{Binding Category}"
-                               FontSize="18"
-                               FontAttributes="Bold"
-                               TextColor="Black" />
-                    </Grid>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-    </StackLayout>
+        <!-- Content starts in Row 1 -->
+        <ScrollView Grid.Row="1" Grid.ColumnSpan="2">
+            <StackLayout Padding="20">
+                <!-- Search input -->
+                <Entry x:Name="InputView"
+                       Placeholder="Search games..."
+                       TextChanged="OnSearchTextChanged" />
+
+                <!-- Game list -->
+                <CollectionView x:Name="GamesListView"
+                                SelectionMode="Single"
+                                SelectionChanged="OnGameSelected">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Padding="10" ColumnDefinitions="*,Auto">
+                                <Label Text="{Binding Name}"
+                                       FontAttributes="Bold"
+                                       FontSize="18" />
+                                <Label Grid.Column="1"
+                                       Text="{Binding Category}"
+                                       FontSize="18"
+                                       FontAttributes="Bold"
+                                       TextColor="Black" />
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+                <!-- Game detail section -->
+                <StackLayout x:Name="GameDetailsLayout"
+                             Padding="10"
+                             IsVisible="False">
+                    <Label x:Name="GameName" FontSize="20" FontAttributes="Bold" />
+                    <Label x:Name="GameCategory" FontSize="16" TextColor="Gray" />
+                    <Image x:Name="GameImage" HeightRequest="150" Aspect="AspectFit" />
+                    <Label x:Name="GameDescription" FontSize="14" />
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
 </ContentPage>
