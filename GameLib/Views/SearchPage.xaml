@@ -19,13 +19,14 @@
         RowDefinitions="Auto,*">
         <!-- Back button -->
         <ImageButton
-            WidthRequest="24"
-            HeightRequest="24"
+            WidthRequest="32"
+            HeightRequest="32"
             Source="imgback.png"
             Grid.Row="0"
             Grid.Column="0"
             HorizontalOptions="Start"
             VerticalOptions="Center"
+            BackgroundColor="Transparent"
             Clicked="BackButton_Clicked" />
 
         <!-- Content starts in Row 1 -->
