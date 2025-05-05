@@ -8,5 +8,6 @@
     Title="GameLib">
 
     <ShellContent Route="MainPage" ContentTemplate="{DataTemplate local:MainPage}" />
+    <ShellContent Route="CategoryPage" ContentTemplate="{DataTemplate local:CategoryPage}" />
 
 </Shell>

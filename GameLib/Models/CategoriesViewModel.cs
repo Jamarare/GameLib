@@ -36,7 +36,7 @@ namespace Models
             Debug.WriteLine($"You Choosed Category: {selectedCategory.Name}");
 
 
-            await Shell.Current.GoToAsync($"//MainPage?selectedCategory={selectedCategory.Name}");
+            await Shell.Current.GoToAsync($"//MainPage?selectedCategory={Uri.EscapeDataString(selectedCategory.Name)}");
 
 
 
