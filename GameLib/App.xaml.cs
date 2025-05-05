@@ -30,7 +30,7 @@ namespace GameLib
             #endif
             });
 
-            MainPage = new GameLibCategoriesPage();
+            MainPage = new MainPage();
         }
     }
 }
