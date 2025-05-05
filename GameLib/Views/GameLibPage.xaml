@@ -84,12 +84,23 @@
                     </Grid>
                 </Border>
 
+                <Button 
+    Text="Browse Categories"
+    Clicked="OnBrowseCategoriesClicked"
+    BackgroundColor="#cc4477"
+    TextColor="White"
+    CornerRadius="12"
+    HeightRequest="48"
+    HorizontalOptions="Center"
+    Margin="0,16,0,0"/>
+
 
                 <!-- Most Popular Label -->
                 <Label
                     Text="Most Popular"
                     Style="{StaticResource PageSubHeaderStyle}"
                     Margin="0,12,0,0"/>
+
 
                 <!-- Popular Games -->
                 <CollectionView

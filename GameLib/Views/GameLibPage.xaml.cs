@@ -50,4 +50,9 @@ public partial class GameLibPage : ContentPage
         _ = MainContentGrid.ScaleTo(1, AnimationDuration);
         await MainContentGrid.TranslateTo(0, 0, AnimationDuration, Easing.CubicIn);
     }
+    private async void OnBrowseCategoriesClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new GameLibCategoriesPage());
+    }
+
 }
