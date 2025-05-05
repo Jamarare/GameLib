@@ -1,9 +1,5 @@
-using Microsoft.Maui.Controls;
 using Models;
 using Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace Views
 {

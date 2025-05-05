@@ -6,6 +6,13 @@
     xmlns:models="clr-namespace:Models"
     Title="Search Page">
 
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#edd4a8" Offset="0.0" />
+            <GradientStop Color="#cc4477" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
     <StackLayout Padding="20">
         <!-- Search input -->
         <Entry x:Name="InputView"
@@ -24,8 +31,9 @@
                                FontSize="18" />
                         <Label Grid.Column="1"
                                Text="{Binding Category}"
-                               FontSize="14"
-                               TextColor="Gray" />
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               TextColor="Black" />
                     </Grid>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
