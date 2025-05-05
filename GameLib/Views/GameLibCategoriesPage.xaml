@@ -5,9 +5,13 @@
              x:Name="GameLibCategoriesClick"
              Title="Categories">
 
-    <ContentPage.BindingContext>
-        <local:CategoriesViewModel/>
-    </ContentPage.BindingContext>
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#edd4a8" Offset="0.0" />
+            <GradientStop Color="#cc4477" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
 
     <ScrollView Orientation="Vertical">
         <CollectionView ItemsSource="{Binding Category}" 

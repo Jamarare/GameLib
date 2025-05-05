@@ -17,14 +17,12 @@ namespace Models
         {
             Category = new ObservableCollection<Category>
             {
-                new Category { Name = "FPS Games", Icon = "fps_games.png" },
-                new Category { Name = "RPG Games", Icon = "fps_games.png"},
-                new Category { Name = "MOBA Games", Icon = "fps_games.png"},
-                new Category { Name = "Sports Games", Icon = "fps_games.png"},
-                new Category { Name = "Action Games", Icon = "fps_games.png"},
-                new Category { Name = "Free To Play Games", Icon = "fps_games.png"},
-                new Category { Name = "Payed Games", Icon = "fps_games.png"},
-                new Category { Name = "Horror Games", Icon = "horror_games.png"}
+                new Category { Name = "FPS Games", Icon = "fps_games1.png" },
+                new Category { Name = "RPG Games", Icon = "rpg_games.png"},
+                new Category { Name = "MOBA Games", Icon = "moba_games1.png"},
+                new Category { Name = "Sports Games", Icon = "sports_games.png"},
+                new Category { Name = "Action Games", Icon = "action_games.png"},
+                new Category { Name = "Horror Games", Icon = "horror_games1.png"}
             };
             CategorySelectedCommand = new Command<Category>( async (selectedCategory) => await OnCategorySelected(selectedCategory)); 
         }
